@@ -12,8 +12,8 @@ echo "
 # syntax=docker/dockerfile:1
 FROM sameersbn/postgresql:latest
 RUN apt update -y && \
-RUN apt upgrade -y && \
-RUN apt-get install -y locales locales-all
+apt upgrade -y && \
+apt-get install -y locales locales-all
 ENV LC_ALL en_AU.UTF-8
 ENV LANG en_AU.UTF-8
 ENV LANGUAGE en_AU.UTF-8
