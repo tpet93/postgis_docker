@@ -11,9 +11,8 @@ cd postgis_docker
 echo "
 # syntax=docker/dockerfile:1
 FROM sameersbn/postgresql:latest
-RUN apt update -y
-RUN apt upgrade -y
-
+RUN apt update -y && \
+RUN apt upgrade -y && \
 RUN apt-get install -y locales locales-all
 ENV LC_ALL en_AU.UTF-8
 ENV LANG en_AU.UTF-8
