@@ -1,5 +1,6 @@
 # postgis_docker
 
+```
 docker login # login to dockerhub
 
 
@@ -28,3 +29,4 @@ RUN exit 0
 
 docker build -t tpet93/postgis3 . # build container
 docker push tpet93/postgis3:latest
+  ```
