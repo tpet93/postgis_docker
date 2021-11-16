@@ -7,7 +7,7 @@ docker login # login to dockerhub
 
 mkdir postgis_docker
 cd postgis_docker
-
+rm dockerfile
 echo "
 # syntax=docker/dockerfile:1
 FROM sameersbn/postgresql:latest
